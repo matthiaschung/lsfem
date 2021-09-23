@@ -36,7 +36,8 @@ function varargout = lsfem(fun, tspan, y0, param)
 % Example:
 %   >> sol = lsfem(@(t,y) -y,[0 1], 1)
 %
-% References:
+% References: M. Chung, J. Krueger, H. Liu, Least-squares finite element
+% methods for ordinary differential equations" ArXiv:, 2021.
 %
 
 % set default parameters
