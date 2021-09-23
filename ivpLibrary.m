@@ -73,8 +73,8 @@ function ivp = ivpLibrary(id,c)
 %      odefuns: {@(t,y)-y./(c(1)+y)  @(t,y)-c(1)./(c(1)+y).^2}
 %
 % References:
-%   M Chung, J Kruger, and H Liu. Least-Squares Finite Element Method for 
-%   Ordinary Differential Equations,...
+% References: M. Chung, J. Krueger, H. Liu, Least-squares finite element
+% methods for ordinary differential equations" ArXiv:, 2021.
 %
 
 if nargin < 1
