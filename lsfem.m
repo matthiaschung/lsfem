@@ -24,9 +24,9 @@ function varargout = lsfem(fun, tspan, y0, param)
 %   y0              - initial conditions y(t0)
 %   param           - optional parameter
 %     splineDegree  - spline degree 1, 2, or 3 (default 3)
-%     nknots        - number of equidistant finite elements (default 31)
+%     nknots        - number of equidistant finite elements (default 50)
 %      npoints      - number of Gauss-Legendre points per element (default 4)
-%      options      - optimset for Matlabs lsqnonlin function
+%      options      - optimset for Matlab's lsqnonlin function
 %
 % Output arguments:
 %   t  - knots
@@ -66,7 +66,7 @@ end
 [t, w] = gaussLegendre(npoints, knots);               % generate Gauss-Legendre quadrature points and weights
 s = femSpline(knots, [], t, splineDegree);            % construct spline structure
 
-x = bsxfun(@times, y0, ones(nf, nknots));  x = x(:);  % initial guess for spline parameters replicate intial conditions
+x = bsxfun(@times, y0, ones(nf, nknots));  x = x(:);  % initial guess for spline parameters replicate initial conditions
 rFcn = @(x) residualFcn(x, fun, y0, nf, s, w);        % define residual function
 
 x = lsqnonlin(rFcn, x, [], [], options);              % solve least squares problem
