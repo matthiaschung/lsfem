@@ -15,7 +15,7 @@
 clear, close all
 
 % standard problems
-id = 4;
+id = 1;
 ivp = ivpLibrary(id);
 %   | id |      ode            |       name         |
 %   |  1 | y' =              y |  exponential growth|
