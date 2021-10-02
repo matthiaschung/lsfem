@@ -74,7 +74,7 @@ function ivp = ivpLibrary(id,c)
 %
 % References:
 % References: M. Chung, J. Krueger, H. Liu, Least-squares finite element
-% methods for ordinary differential equations" ArXiv:, 2021.
+% methods for ordinary differential equations", arXiv:2109.15133, 2021.
 %
 
 if nargin < 1
