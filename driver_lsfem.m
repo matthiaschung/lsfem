@@ -10,7 +10,7 @@
 % MATLAB Version: 9.10.0.1710957 (R2021a) Update 4
 %
 % References: M. Chung, J. Krueger, H. Liu, Least-squares finite element
-% methods for ordinary differential equations" ArXiv:, 2021.
+% methods for ordinary differential equations", arXiv:2109.15133, 2021.
 
 clear, close all
 
